@@ -1,0 +1,55 @@
+.ligne2{
+  padding-left: 15px;
+}
+
+.ligne3{
+  padding-left: 30px;
+}
+
+.touche{
+  width: 15px;
+  display: inline-block;
+  margin: 3px;
+  padding: 6px;
+  border: 1px black solid;
+}
+
+.width-auto{
+  width: auto;
+}
+
+.tapee{
+  border: 1px red solid;
+  background-color: crimson;
+  transition: all 1s;
+}
+
+.suggeree{
+  border: 1px blue solid;
+  background-color: aqua;
+  transition: all 1s;
+}
+
+.trouvee{
+  border: 1px green solid;
+  background-color: aquamarine;
+  transition: all 1s;
+}
+
+@keyframes example {
+  0%   {color: black;
+        font-size: 100%;}
+  50%  {color: red;
+        font-size: 200%;}
+  100%   {color: black;
+          font-size: 100%;}
+}
+
+@keyframes example2{
+  0%   {color: black;
+        font-size: 100%;}
+  50%  {color: green;
+        font-size: 200%;}
+  100%   {color: black;
+          font-size: 100%;}
+}

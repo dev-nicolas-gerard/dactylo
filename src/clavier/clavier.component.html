@@ -1,0 +1,21 @@
+<div>
+  <div class="ligne">
+    <div *ngFor="let i of generateArray(0, 10)"
+          class="touche"
+         [ngClass]="isLettreTapee(lettresClavier[i])">{{lettresClavier[i] | uppercase }}</div>
+  <div class="touche width-auto"
+       [ngClass]="isLettreTapee(lettresClavier[26])">{{lettresClavier[27] | uppercase }}
+    
+  </div>
+  <div class="ligne2">
+    <div *ngFor="let i of generateArray(10, 20)"
+          class="touche"
+         [ngClass]="isLettreTapee(lettresClavier[i])">{{lettresClavier[i] | uppercase }}</div>
+  </div>
+  <div class="ligne3">
+    <div *ngFor="let i of generateArray(20, 26)"
+        class="touche"
+         [ngClass]="isLettreTapee(lettresClavier[i])">{{lettresClavier[i] | uppercase }}</div>
+
+  </div>
+</div>
